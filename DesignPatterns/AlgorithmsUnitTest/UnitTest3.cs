@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 using ProblemSolving.HackerRank.Backtracking;
 using ProblemSolving.HackerRank.WarmUp;
 
@@ -62,6 +63,24 @@ namespace AlgorithmsUnitTest
 
             string test3 = new string(test1.Except(test2).ToArray());
             //Assert.IsTrue(test3 == "bd");
+        }
+    }
+
+    [TestClass]
+    public class WaterTappingProblemTest
+    {
+        [TestMethod]
+        public void TestWaterCollected()
+        {
+            WaterTappingProblem problem = new WaterTappingProblem();
+            var output = problem.GetStoredWater(new int[] { 2, 0, 2 });
+            Assert.AreEqual(output, 2);
+
+            output = problem.GetStoredWater(new int[] { 3, 0, 0, 2, 0, 4 });
+            Assert.AreEqual(output, 10);
+
+            output = problem.GetStoredWater(new int[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 });
+            Assert.AreEqual(output, 6);
         }
     }
 

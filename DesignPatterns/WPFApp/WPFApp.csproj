@@ -60,6 +60,11 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Extensions\LocationExtensions.cs" />
+    <Compile Include="MainTest.xaml.cs">
+      <DependentUpon>MainTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\AModel.cs" />
+    <Compile Include="ViewModels\AViewModel.cs" />
     <Compile Include="ViewModels\Base\ViewModelBase.cs" />
     <Compile Include="ViewModels\LocationViewModel.cs" />
     <Page Include="Controls\FieldControl.xaml">
@@ -69,6 +74,10 @@
     <Page Include="LocationWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainTest.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

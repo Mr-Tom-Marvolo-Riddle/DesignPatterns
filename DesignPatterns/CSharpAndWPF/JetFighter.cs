@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Reactive.Linq;
 using System.Reactive.Subjects;
 
@@ -89,7 +91,7 @@ namespace CSharpAndWPF
         }
 
         public IObservable<string> WhenPropertyChanged =>
-            Observable.FromEvent<PropertyChangedEventHandler, PropertyChangedEventArgs>(x => _propertyChanged += x,x => _propertyChanged -= x)
+            Observable.FromEvent<PropertyChangedEventHandler, PropertyChangedEventArgs>(x => _propertyChanged += x, x => _propertyChanged -= x)
             .Select(x => x.PropertyName);
 
         protected void RaisePropertyChanged(string propertyName)

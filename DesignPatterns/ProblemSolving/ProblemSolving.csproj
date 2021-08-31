@@ -54,6 +54,7 @@
     <Compile Include="HackerRank\WarmUp\JumpingOnTheClouds.cs" />
     <Compile Include="HackerRank\WarmUp\QueensAttack.cs" />
     <Compile Include="HackerRank\WarmUp\SockMerchant.cs" />
+    <Compile Include="HackerRank\WarmUp\WaterTappingProblem.cs" />
     <Compile Include="HotelManagement\BookingService.cs" />
     <Compile Include="HotelManagement\BranchFactory.cs" />
     <Compile Include="HotelManagement\Customer.cs" />
