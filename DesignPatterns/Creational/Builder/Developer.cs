@@ -6,7 +6,7 @@
 
         private readonly IBuilder _builder;
 
-        #endregion
+        #endregion Private Variable Declarations.
 
         #region IFrameworkDeveloper Interface Implementation.
 
@@ -22,7 +22,7 @@
             Framework = _builder.GetFramework();
         }
 
-        #endregion
+        #endregion IFrameworkDeveloper Interface Implementation.
 
         #region Constructors.
 
@@ -31,6 +31,6 @@
             _builder = builder;
         }
 
-        #endregion
+        #endregion Constructors.
     }
 }

@@ -12,7 +12,7 @@ namespace ProblemSolving.Monopoly.Game.Players
         private int _money;
         private readonly List<Cell> _playerCells;
 
-        #endregion
+        #endregion Private Variable Declarations.
 
         #region Public Properties.
 
@@ -21,7 +21,7 @@ namespace ProblemSolving.Monopoly.Game.Players
         public List<Cell> OwnedHotels { get; private set; }
         public Cell CurrentCell { get; private set; }
 
-        #endregion
+        #endregion Public Properties.
 
         #region Constructors.
 
@@ -35,7 +35,7 @@ namespace ProblemSolving.Monopoly.Game.Players
             OwnedHotels = new List<Cell>();
         }
 
-        #endregion
+        #endregion Constructors.
 
         #region Public Method Declarations.
 
@@ -80,7 +80,7 @@ namespace ProblemSolving.Monopoly.Game.Players
             return _money;
         }
 
-        #endregion
+        #endregion Public Method Declarations.
 
         #region Private Method Declarations.
 
@@ -131,6 +131,6 @@ namespace ProblemSolving.Monopoly.Game.Players
             owner.ReceiveRent(rentAmount);
         }
 
-        #endregion
+        #endregion Private Method Declarations.
     }
 }

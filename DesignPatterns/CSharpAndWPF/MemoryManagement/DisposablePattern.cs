@@ -5,14 +5,16 @@ namespace CSharpAndWPF.MemoryManagement
 {
     public class DisposablePattern : IDisposable
     {
-        // Pointer to an external unmanaged resource. 
+        // Pointer to an external unmanaged resource.
         private IntPtr _handle;
-        // Other managed resource this class uses. 
+
+        // Other managed resource this class uses.
         private readonly Component _component = new Component();
-        // Track whether Dispose has been called. 
+
+        // Track whether Dispose has been called.
         private bool _disposed = false;
 
-        // Use interop to call the method necessary 
+        // Use interop to call the method necessary
         // to clean up the unmanaged resource.
         [System.Runtime.InteropServices.DllImport("Kernel32")]
         private static extern bool CloseHandle(IntPtr handle);

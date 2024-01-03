@@ -9,9 +9,10 @@
 
         public string[,] Points;
 
-        #endregion
+        #endregion Properties.
 
         #region Constructors.
+
         public Field(int x, int y)
         {
             Width = x;
@@ -19,7 +20,7 @@
             Points = new string[x, y];
         }
 
-        #endregion
+        #endregion Constructors.
 
         public void UpdateValue(int x, int y, string direction)
         {

@@ -3,6 +3,7 @@
     public class SoldierFactory
     {
         public static Soldier _soldier;
+
         public static Soldier GetSoldier()
         {
             if (_soldier == null)

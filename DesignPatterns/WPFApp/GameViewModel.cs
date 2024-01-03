@@ -17,6 +17,7 @@ namespace WPFApp
         private string _direction = "L";
 
         private int _score;
+
         public int Score
         {
             get => _score;
@@ -28,6 +29,7 @@ namespace WPFApp
         }
 
         private Field _field;
+
         public Field Field
         {
             get => _field;
@@ -39,6 +41,7 @@ namespace WPFApp
         }
 
         private bool _isGameOver;
+
         public bool IsGameOver
         {
             get => _isGameOver;
@@ -70,6 +73,7 @@ namespace WPFApp
             _fruitTimer.Start();
             _moveTimer.Start();
         }
+
         private void CreateField()
         {
             _moveTimer = new Timer(200);
@@ -84,6 +88,7 @@ namespace WPFApp
             Field = new Field(20, 20);
             Field.CreateSnake(new Cell(4, 4), 3);
         }
+
         private void RestartGame()
         {
             Score = 0;
@@ -130,11 +135,11 @@ namespace WPFApp
                 Field.Points[index].Type = "F";
             }
         }
+
         private void OnTimerTick(object sender, ElapsedEventArgs e)
         {
             lock (_locker)
             {
-                
                 int score = Field.MoveSnake(_direction);
                 if (score == -1)
                 {

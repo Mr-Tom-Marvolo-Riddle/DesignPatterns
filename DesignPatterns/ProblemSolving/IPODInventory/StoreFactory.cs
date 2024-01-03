@@ -6,6 +6,7 @@ namespace ProblemSolving.IPODInventory
     public class StoreFactory
     {
         private readonly List<Store> _stores;
+
         public StoreFactory()
         {
             _stores = new List<Store>();

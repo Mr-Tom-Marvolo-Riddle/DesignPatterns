@@ -7,12 +7,12 @@ using WPFApp.ViewModels.Base;
 
 namespace WPFApp.ViewModels
 {
-
     public class LocationViewModel : ViewModelBase
     {
         private readonly GeoCoordinateWatcher _coordinateWatcher;
 
         private string _latitude;
+
         public string Latitude
         {
             get => _latitude;
@@ -20,6 +20,7 @@ namespace WPFApp.ViewModels
         }
 
         private string _longitude;
+
         public string Longitude
         {
             get => _longitude;
@@ -27,6 +28,7 @@ namespace WPFApp.ViewModels
         }
 
         private GeoCoordinate _necBangaloreLocation;
+
         public GeoCoordinate NecBangaloreLocation
         {
             get => _necBangaloreLocation;
@@ -34,6 +36,7 @@ namespace WPFApp.ViewModels
         }
 
         private string _distanceInMiles;
+
         public string DistanceInMiles
         {
             get => _distanceInMiles;
@@ -41,6 +44,7 @@ namespace WPFApp.ViewModels
         }
 
         private string _distanceInKms;
+
         public string DistanceInKms
         {
             get => _distanceInKms;

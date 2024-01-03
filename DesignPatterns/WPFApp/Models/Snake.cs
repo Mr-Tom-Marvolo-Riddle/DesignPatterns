@@ -1,5 +1,4 @@
-﻿
-using WPFApp.Models.Base;
+﻿using WPFApp.Models.Base;
 
 namespace WPFApp.Models
 {
@@ -13,7 +12,7 @@ namespace WPFApp.Models
         public Cell Head { get; private set; }
         public Cell Tail { get; private set; }
 
-        #endregion
+        #endregion Public Properties.
 
         #region Constructors.
 
@@ -23,7 +22,7 @@ namespace WPFApp.Models
             ValidateSnake(field, start, length);
         }
 
-        #endregion
+        #endregion Constructors.
 
         public int Move(string direction)
         {
@@ -110,12 +109,15 @@ namespace WPFApp.Models
                 case "U":
                     Tail.X = Tail.X - 1;
                     break;
+
                 case "L":
                     Tail.Y = Tail.Y - 1;
                     break;
+
                 case "R":
                     Tail.Y = Tail.Y + 1;
                     break;
+
                 case "D":
                     Tail.X = Tail.X + 1;
                     break;

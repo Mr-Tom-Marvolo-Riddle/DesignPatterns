@@ -55,7 +55,6 @@
                     Margin="10"
                     HorizontalAlignment="Center" />
             </Border>
-
         </StackPanel>
         <StackPanel Orientation="Vertical" Grid.Column="1">
             <TextBlock
@@ -76,7 +75,6 @@
                     Margin="10"
                     HorizontalAlignment="Center" />
             </Border>
-
         </StackPanel>
 
         <Border
@@ -182,7 +180,6 @@
                     Text="{Binding DistanceInKms}"
                     HorizontalAlignment="Left"
                     Style="{DynamicResource SmallTextblock}" />
-
             </Grid>
         </Border>
     </Grid>

@@ -10,7 +10,7 @@ namespace ProblemSolving.MarsRover
         public int Height { get; private set; }
         public int Width { get; private set; }
 
-        #endregion
+        #endregion Public Properties.
 
         #region Constructors.
 
@@ -22,7 +22,7 @@ namespace ProblemSolving.MarsRover
             Rovers = new List<RoverClient>();
         }
 
-        #endregion
+        #endregion Constructors.
 
         #region Public Method Declarations.
 
@@ -36,6 +36,6 @@ namespace ProblemSolving.MarsRover
             return Rovers;
         }
 
-        #endregion
+        #endregion Public Method Declarations.
     }
 }

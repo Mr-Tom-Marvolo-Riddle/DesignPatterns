@@ -12,7 +12,7 @@
             UnitPrice = unitPrice;
         }
 
-        #endregion
+        #endregion Constructors.
 
         public virtual int GetUnitPrice()
         {

@@ -6,11 +6,9 @@
 
     public class Regular : Customer
     {
-
     }
 
     public class Rewardee : Customer
     {
-
     }
 }

@@ -9,7 +9,7 @@ namespace ProblemSolving.IPODInventory
 
         public List<Product> Products { get; private set; }
 
-        #endregion
+        #endregion Public Properties.
 
         #region Constructors.
 
@@ -18,7 +18,7 @@ namespace ProblemSolving.IPODInventory
             Products = new List<Product>();
         }
 
-        #endregion
+        #endregion Constructors.
 
         #region Public Properties.
 
@@ -50,6 +50,6 @@ namespace ProblemSolving.IPODInventory
             return products;
         }
 
-        #endregion
+        #endregion Public Properties.
     }
 }

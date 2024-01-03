@@ -11,7 +11,7 @@ namespace Creational.Builder
 
         private readonly Framework _framework;
 
-        #endregion
+        #endregion Private Variable Declarations.
 
         #region Constructors.
 
@@ -20,7 +20,7 @@ namespace Creational.Builder
             _framework = framework;
         }
 
-        #endregion
+        #endregion Constructors.
 
         #region IBuilder Interface Implementation.
 
@@ -59,6 +59,6 @@ namespace Creational.Builder
             return _framework;
         }
 
-        #endregion
+        #endregion IBuilder Interface Implementation.
     }
 }

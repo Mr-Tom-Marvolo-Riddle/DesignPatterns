@@ -8,6 +8,7 @@ namespace Structural.FlyweightDesignPattern
         private int _currentLocY = 10;
 
         private readonly Soldier _soldier;
+
         public SoldierClient()
         {
             _soldier = SoldierFactory.GetSoldier();

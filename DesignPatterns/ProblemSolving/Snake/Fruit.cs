@@ -5,6 +5,7 @@ namespace ProblemSolving.SnakeGame
     public abstract class Fruit : ModelBase
     {
         private int _point;
+
         public virtual int Point
         {
             get => _point;
@@ -16,6 +17,7 @@ namespace ProblemSolving.SnakeGame
         }
 
         private string _name;
+
         public virtual string Name
         {
             get => _name;

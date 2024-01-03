@@ -53,7 +53,6 @@ namespace AlgorithmsAndDataStructures.Graphs
             return str;
         }
 
-
         private void BreadthFirstTraversal(int v, bool[] visited, ref string str)
         {
             visited[v] = true;

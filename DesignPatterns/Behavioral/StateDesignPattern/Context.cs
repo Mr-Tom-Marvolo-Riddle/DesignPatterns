@@ -5,6 +5,7 @@ namespace Behavioral.StateDesignPattern
     public class Context
     {
         private State _state;
+
         public State State
         {
             get => _state;

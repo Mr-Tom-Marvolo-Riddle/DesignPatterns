@@ -13,12 +13,16 @@
             {
                 case "E":
                     return new EmptyCell();
+
                 case "J":
                     return new Jail();
+
                 case "H":
                     return new Hotel();
+
                 case "T":
                     return new Treasure();
+
                 default:
                     break;
             }

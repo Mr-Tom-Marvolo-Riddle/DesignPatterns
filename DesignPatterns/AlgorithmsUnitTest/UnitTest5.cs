@@ -1,6 +1,7 @@
 ﻿using System;
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProblemSolving.SnakeGame;
+
 using ProblemSolving.SnakeGame;
 
 namespace AlgorithmsUnitTest
@@ -11,7 +12,6 @@ namespace AlgorithmsUnitTest
         [TestMethod]
         public void CreateGame()
         {
-
         }
 
         [TestMethod]
@@ -55,6 +55,5 @@ namespace AlgorithmsUnitTest
 
             AlgorithmsAndDataStructures.Matrix.MatrixProblems.PrintMatrix(field.Points);
         }
-
     }
 }

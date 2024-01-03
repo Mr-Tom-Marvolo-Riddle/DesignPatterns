@@ -7,6 +7,7 @@ namespace ProblemSolving.HotelManagement
     public class BookingService
     {
         private readonly BranchFactory _branchFactory;
+
         public BookingService()
         {
             _branchFactory = new BranchFactory();

@@ -11,11 +11,12 @@ namespace Creational.Factory
             Name = name;
         }
 
-        #endregion
+        #endregion Constructors.
 
         #region IPrinter Interface Implementation.
 
         public string Name { get; private set; }
+
         public void Configure()
         {
             Console.WriteLine(string.Format("Configuring {0}.", Name));
@@ -26,6 +27,6 @@ namespace Creational.Factory
             Console.WriteLine(string.Format("Printing from {0}.", Name));
         }
 
-        #endregion
+        #endregion IPrinter Interface Implementation.
     }
 }

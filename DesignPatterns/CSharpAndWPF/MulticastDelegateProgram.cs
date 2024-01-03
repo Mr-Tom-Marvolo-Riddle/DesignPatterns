@@ -1,9 +1,11 @@
 ﻿using System;
+
 using CSharpAndWPF.Common.Extensions;
 
 namespace CSharpAndWPF
 {
     public delegate void MulticastDelegateEventHandler(object sender);
+
     public class MulticastDelegateProgram
     {
         public event MulticastDelegateEventHandler OnMulticastEventOccurred;

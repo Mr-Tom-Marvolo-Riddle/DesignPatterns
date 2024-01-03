@@ -1,4 +1,5 @@
 ﻿using AlgorithmsAndDataStructures.SearchAndSort;
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AlgorithmsUnitTest

@@ -8,6 +8,5 @@ namespace ProblemSolving.HotelManagement.Extensions
         {
             return (date.DayOfWeek == DayOfWeek.Saturday || date.DayOfWeek == DayOfWeek.Saturday);
         }
-
     }
 }

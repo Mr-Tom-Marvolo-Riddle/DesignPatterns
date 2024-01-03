@@ -20,11 +20,17 @@ namespace CSharpAndWPF.AsyncDelegates
         AggregateException Exception { get; }
         string ErrorMessage { get; }
         DelegateCommand RefreshCommand { get; }
+
         bool CanRefresh();
+
         void Refresh();
+
         Task<TResult> Continue();
+
         Task<TNewResult> ContinueWith<TNewResult>(Func<Task<TResult>, TNewResult> continuationFunction);
+
         Task ContinueWith<TNewResult>(Action<Task<TResult>> continuationFunction);
+
         Task ContinueWith<TNewResult>(Action<Task<TResult>, object> continuationFunction, object state);
     }
 
@@ -115,6 +121,7 @@ namespace CSharpAndWPF.AsyncDelegates
         }
 
         private readonly bool _isDisposed = false;
+
         public virtual void Dispose(bool isDisposing)
         {
             if (!_isDisposed)

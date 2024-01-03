@@ -15,6 +15,7 @@ namespace WPFApp.Models
         public int Height { get; set; }
 
         private ObservableCollection<Cell> _points;
+
         public ObservableCollection<Cell> Points
         {
             get => _points;
@@ -31,7 +32,7 @@ namespace WPFApp.Models
             return Snake.Move(direction);
         }
 
-        #endregion
+        #endregion Properties.
 
         #region Constructors.
 
@@ -51,7 +52,7 @@ namespace WPFApp.Models
             }
         }
 
-        #endregion
+        #endregion Constructors.
 
         #region Public Properties.
 
@@ -114,6 +115,6 @@ namespace WPFApp.Models
             }
         }
 
-        #endregion
+        #endregion Public Properties.
     }
 }

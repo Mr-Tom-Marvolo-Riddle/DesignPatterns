@@ -5,13 +5,14 @@ namespace ProblemSolving.Monopoly.Game.Cells
     public abstract class Cell
     {
         #region Public Properties.
+
         public abstract int Worth { get; set; }
         public virtual int Fine { get; set; } = 0;
         public virtual int Rent { get; set; } = 0;
         public virtual Player Owner { get; set; }
         public Cell Next { get; set; }
 
-        #endregion
+        #endregion Public Properties.
 
         #region Constructor.
 
@@ -19,7 +20,7 @@ namespace ProblemSolving.Monopoly.Game.Cells
         {
         }
 
-        #endregion
+        #endregion Constructor.
 
         #region Public Method Declarations.
 
@@ -28,6 +29,6 @@ namespace ProblemSolving.Monopoly.Game.Cells
             return Worth - Fine;
         }
 
-        #endregion
+        #endregion Public Method Declarations.
     }
 }

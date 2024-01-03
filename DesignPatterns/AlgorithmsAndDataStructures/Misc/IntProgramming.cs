@@ -62,7 +62,6 @@ namespace AlgorithmsAndDataStructures.Misc
             }
             else
             {
-
                 int sum = GetFibonacciSeriesRecursive(n - 1, str) + GetFibonacciSeriesRecursive(n - 2, str);
                 str += " " + sum;
                 return sum;

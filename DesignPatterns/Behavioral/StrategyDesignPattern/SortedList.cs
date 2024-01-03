@@ -9,7 +9,7 @@ namespace Behavioral.StrategyDesignPattern
         private readonly List<string> _items;
         private readonly SortStrategy _stategy;
 
-        #endregion
+        #endregion Private Variable Declarations.
 
         #region Constructors.
 
@@ -18,7 +18,7 @@ namespace Behavioral.StrategyDesignPattern
             _items = new List<string>();
         }
 
-        #endregion
+        #endregion Constructors.
 
         #region Public Properties.
 
@@ -41,6 +41,7 @@ namespace Behavioral.StrategyDesignPattern
         {
             return _items;
         }
-        #endregion
+
+        #endregion Public Properties.
     }
 }

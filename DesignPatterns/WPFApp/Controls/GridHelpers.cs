@@ -30,10 +30,8 @@ namespace WPFApp.Controls
                 typeof(GridHelpers),
                 new PropertyMetadata(20));
 
-
-
         /// <summary>
-        /// Adds the specified number of Rows to RowDefinitions. 
+        /// Adds the specified number of Rows to RowDefinitions.
         /// Default Height is Auto
         /// </summary>
         public static readonly DependencyProperty RowCountProperty =
@@ -83,12 +81,12 @@ namespace WPFApp.Controls
             SetStarRows(grid);
         }
 
-        #endregion
+        #endregion RowCount Property
 
         #region ColumnCount Property
 
         /// <summary>
-        /// Adds the specified number of Columns to ColumnDefinitions. 
+        /// Adds the specified number of Columns to ColumnDefinitions.
         /// Default Width is Auto
         /// </summary>
         public static readonly DependencyProperty ColumnCountProperty =
@@ -137,12 +135,12 @@ namespace WPFApp.Controls
             SetStarColumns(grid);
         }
 
-        #endregion
+        #endregion ColumnCount Property
 
         #region StarRows Property
 
         /// <summary>
-        /// Makes the specified Row's Height equal to Star. 
+        /// Makes the specified Row's Height equal to Star.
         /// Can set on multiple Rows
         /// </summary>
         public static readonly DependencyProperty StarRowsProperty =
@@ -174,12 +172,12 @@ namespace WPFApp.Controls
             SetStarRows((Grid)obj);
         }
 
-        #endregion
+        #endregion StarRows Property
 
         #region StarColumns Property
 
         /// <summary>
-        /// Makes the specified Column's Width equal to Star. 
+        /// Makes the specified Column's Width equal to Star.
         /// Can set on multiple Columns
         /// </summary>
         public static readonly DependencyProperty StarColumnsProperty =
@@ -211,7 +209,7 @@ namespace WPFApp.Controls
             SetStarColumns((Grid)obj);
         }
 
-        #endregion
+        #endregion StarColumns Property
 
         private static void SetStarColumns(Grid grid)
         {
@@ -244,4 +242,3 @@ namespace WPFApp.Controls
         }
     }
 }
-

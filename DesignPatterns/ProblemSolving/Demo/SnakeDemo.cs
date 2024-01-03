@@ -15,6 +15,7 @@ namespace ProblemSolving.Demo
         private Snake snake = null;
         private Field field = null;
         private string direction = "L";
+
         public void Run()
         {
             Console.OutputEncoding = Encoding.Unicode;
@@ -27,7 +28,6 @@ namespace ProblemSolving.Demo
             _moveTimer = new Timer(500);
             _moveTimer.Elapsed -= OnTimerTick;
             _moveTimer.Elapsed += OnTimerTick;
-
 
             _fruitTimer = new Timer(5000);
             _fruitTimer.Elapsed -= OnFruitTimerTick;
@@ -86,6 +86,7 @@ namespace ProblemSolving.Demo
 
         private int lastX = -1;
         private int lastY = -1;
+
         private void OnFruitTimerTick(object sender, ElapsedEventArgs e)
         {
             if (_moveTimer.Interval > 20)

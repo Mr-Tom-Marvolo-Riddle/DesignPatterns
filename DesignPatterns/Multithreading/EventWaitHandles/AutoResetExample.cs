@@ -8,6 +8,7 @@ namespace Multithreading.EventWaitHandles
     {
         private static EventWaitHandle _autoResetEvent = new AutoResetEvent(false);
         private static EventWaitHandle _autoResetEvent2 = new EventWaitHandle(false, EventResetMode.AutoReset);
+
         private static void WaiterMethod()
         {
             ColorConsole.WriteWarning("Waiting for auto-reset event signal. Thread ID :" + Thread.CurrentThread.ManagedThreadId);

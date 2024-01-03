@@ -22,6 +22,7 @@ namespace ProblemSolving.HotelManagement
     public class BranchA : Hotel
     {
         public override int Rating { get; set; }
+
         public BranchA(PricingStrategy strategy) : base(strategy)
         {
             Rating = 3;
@@ -31,6 +32,7 @@ namespace ProblemSolving.HotelManagement
     public class BranchB : Hotel
     {
         public override int Rating { get; set; }
+
         public BranchB(PricingStrategy strategy) : base(strategy)
         {
             Rating = 5;

@@ -13,8 +13,10 @@
             {
                 case ShapeType.Circle:
                     return new Circle();
+
                 case ShapeType.Rectangle:
                     return new Rect();
+
                 default:
                     return null;
             }

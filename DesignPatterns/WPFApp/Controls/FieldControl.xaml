@@ -132,7 +132,7 @@
                                             <Setter Property="Visibility" Value="Collapsed" />
                                         </DataTrigger>
                                         <DataTrigger Binding="{Binding Type}" Value="F">
-                                            <Setter Property="Visibility" Value="Visible"/>
+                                            <Setter Property="Visibility" Value="Visible" />
                                             <Setter Property="Background">
                                                 <Setter.Value>
                                                     <ImageBrush ImageSource="/WPFApp;component/Assets/banana.png" />
@@ -140,7 +140,7 @@
                                             </Setter>
                                         </DataTrigger>
                                         <DataTrigger Binding="{Binding Type}" Value="W">
-                                            <Setter Property="Visibility" Value="Visible"/>
+                                            <Setter Property="Visibility" Value="Visible" />
                                             <Setter Property="Background">
                                                 <Setter.Value>
                                                     <ImageBrush ImageSource="/WPFApp;component/Assets/watermellon.png" />
@@ -148,7 +148,7 @@
                                             </Setter>
                                         </DataTrigger>
                                         <DataTrigger Binding="{Binding Type}" Value="B">
-                                            <Setter Property="Visibility" Value="Visible"/>
+                                            <Setter Property="Visibility" Value="Visible" />
                                             <Setter Property="Background">
                                                 <Setter.Value>
                                                     <ImageBrush ImageSource="/WPFApp;component/Assets/grape.png" />
@@ -156,7 +156,7 @@
                                             </Setter>
                                         </DataTrigger>
                                         <DataTrigger Binding="{Binding Type}" Value="C">
-                                            <Setter Property="Visibility" Value="Visible"/>
+                                            <Setter Property="Visibility" Value="Visible" />
                                             <Setter Property="Background">
                                                 <Setter.Value>
                                                     <ImageBrush ImageSource="/WPFApp;component/Assets/skull.png" />

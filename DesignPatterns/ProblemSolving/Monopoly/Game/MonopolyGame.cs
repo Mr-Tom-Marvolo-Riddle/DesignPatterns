@@ -23,7 +23,7 @@ namespace ProblemSolving.Monopoly.Game
         public Board Board { get; set; }
         public List<Player> Players { get; private set; }
 
-        #endregion
+        #endregion Public Properties.
 
         #region Constructor.
 
@@ -36,7 +36,7 @@ namespace ProblemSolving.Monopoly.Game
             Players = new List<Player>();
         }
 
-        #endregion
+        #endregion Constructor.
 
         #region Public Method Declarations.
 
@@ -66,7 +66,7 @@ namespace ProblemSolving.Monopoly.Game
             return PrintResult();
         }
 
-        #endregion
+        #endregion Public Method Declarations.
 
         #region Private Method Declarations.
 
@@ -80,6 +80,6 @@ namespace ProblemSolving.Monopoly.Game
             return builder.ToString();
         }
 
-        #endregion
+        #endregion Private Method Declarations.
     }
 }

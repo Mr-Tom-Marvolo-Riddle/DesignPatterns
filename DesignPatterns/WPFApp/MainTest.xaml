@@ -8,18 +8,18 @@
         Title="MainTest" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
             <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
-        <DataGrid Margin="20" AutoGenerateColumns="True" ItemsSource="{Binding MyList}"/>
+        <DataGrid Margin="20" AutoGenerateColumns="True" ItemsSource="{Binding MyList}" />
         <ListBox Grid.Row="1" ItemsSource="{Binding MyList}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <TextBox Text="{Binding A,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                    <TextBox Text="{Binding A,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <Button  Grid.Row="2" HorizontalAlignment="Center" Margin="20" Content="Click Me" Click="Button_Click"/>
+        <Button  Grid.Row="2" HorizontalAlignment="Center" Margin="20" Content="Click Me" Click="Button_Click" />
     </Grid>
 </Window>

@@ -7,13 +7,14 @@
         #region Public Properties.
 
         private int _id;
+
         public int Id
         {
             get => _id;
             private set => _id = value;
         }
 
-        #endregion
+        #endregion Public Properties.
 
         #region Constructors.
 
@@ -22,6 +23,6 @@
             Id = id;
         }
 
-        #endregion
+        #endregion Constructors.
     }
 }

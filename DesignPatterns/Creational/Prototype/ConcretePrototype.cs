@@ -3,12 +3,12 @@
     public class ConcretePrototype : Prototype
     {
         #region Constructor.
+
         public ConcretePrototype(int id) : base(id)
         {
-
         }
 
-        #endregion
+        #endregion Constructor.
 
         #region Public Overrides.
 
@@ -17,6 +17,6 @@
             return (Prototype)MemberwiseClone();
         }
 
-        #endregion
+        #endregion Public Overrides.
     }
 }

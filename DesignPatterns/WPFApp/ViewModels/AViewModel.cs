@@ -7,7 +7,7 @@ namespace WPFApp.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        void RaisePropertyChanged(string propertyName)
+        private void RaisePropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }

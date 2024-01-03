@@ -7,12 +7,13 @@ namespace ProblemSolving.SnakeGame
     public class Snake : ModelBase
     {
         private readonly Field _field;
+
         #region Public Properties.
 
         public Point Head { get; private set; }
         public Point Tail { get; private set; }
 
-        #endregion
+        #endregion Public Properties.
 
         #region Constructors.
 
@@ -45,7 +46,7 @@ namespace ProblemSolving.SnakeGame
             Tail = new Point(Head.X, Head.Y + length - 1);
         }
 
-        #endregion
+        #endregion Constructors.
 
         public bool Move(string direction)
         {
@@ -130,12 +131,15 @@ namespace ProblemSolving.SnakeGame
                 case "U":
                     Tail.X = Tail.X - 1;
                     break;
+
                 case "L":
                     Tail.Y = Tail.Y - 1;
                     break;
+
                 case "R":
                     Tail.Y = Tail.Y + 1;
                     break;
+
                 case "D":
                     Tail.X = Tail.X + 1;
                     break;
@@ -145,12 +149,10 @@ namespace ProblemSolving.SnakeGame
 
         private void CheckCollision(Point head, string direction)
         {
-
         }
 
         public void AddNode()
         {
-
         }
     }
 }

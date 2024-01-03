@@ -18,6 +18,7 @@ namespace ProblemSolving.SnakeGame
         //}
 
         private int _x;
+
         public int X
         {
             get => _x;
@@ -29,6 +30,7 @@ namespace ProblemSolving.SnakeGame
         }
 
         private int _y;
+
         public int Y
         {
             get => _y;
@@ -39,7 +41,7 @@ namespace ProblemSolving.SnakeGame
             }
         }
 
-        #endregion
+        #endregion Public Properties.
 
         #region Constructors.
 
@@ -50,6 +52,6 @@ namespace ProblemSolving.SnakeGame
             //Direction = type;
         }
 
-        #endregion
+        #endregion Constructors.
     }
 }

@@ -10,7 +10,7 @@ namespace ProblemSolving.MarsRover
         private readonly int _maxWidth;
         private readonly int _maxHeight;
 
-        #endregion
+        #endregion Private Variable Declarations.
 
         #region Constructor.
 
@@ -21,7 +21,7 @@ namespace ProblemSolving.MarsRover
             _maxHeight = maxHeight;
         }
 
-        #endregion
+        #endregion Constructor.
 
         #region Public Method Declarations.
 
@@ -51,7 +51,7 @@ namespace ProblemSolving.MarsRover
                 _rover.Direction));
         }
 
-        #endregion
+        #endregion Public Method Declarations.
 
         #region Private Method Declarations.
 
@@ -64,6 +64,7 @@ namespace ProblemSolving.MarsRover
                 case Command.R:
                     RotateRover(command);
                     break;
+
                 case Command.M:
                     MoveRover();
                     break;
@@ -80,15 +81,19 @@ namespace ProblemSolving.MarsRover
                     case Direction.N:
                         _rover.Direction = Direction.W;
                         break;
+
                     case Direction.E:
                         _rover.Direction = Direction.N;
                         break;
+
                     case Direction.W:
                         _rover.Direction = Direction.S;
                         break;
+
                     case Direction.S:
                         _rover.Direction = Direction.E;
                         break;
+
                     default:
                         break;
                 }
@@ -101,15 +106,19 @@ namespace ProblemSolving.MarsRover
                     case Direction.N:
                         _rover.Direction = Direction.E;
                         break;
+
                     case Direction.E:
                         _rover.Direction = Direction.S;
                         break;
+
                     case Direction.W:
                         _rover.Direction = Direction.N;
                         break;
+
                     case Direction.S:
                         _rover.Direction = Direction.W;
                         break;
+
                     default:
                         break;
                 }
@@ -129,15 +138,19 @@ namespace ProblemSolving.MarsRover
                 case Direction.N:
                     _rover.Position.Y = _rover.Position.Y + steps;
                     break;
+
                 case Direction.E:
                     _rover.Position.X = _rover.Position.X + steps;
                     break;
+
                 case Direction.W:
                     _rover.Position.X = _rover.Position.X - steps;
                     break;
+
                 case Direction.S:
                     _rover.Position.Y = _rover.Position.Y - steps;
                     break;
+
                 default:
                     break;
             }
@@ -149,16 +162,19 @@ namespace ProblemSolving.MarsRover
             {
                 case Direction.N:
                     return _rover.Position.Y + steps <= _maxHeight;
+
                 case Direction.E:
                     return _rover.Position.X + steps <= _maxWidth;
+
                 case Direction.W:
                     return _rover.Position.X - steps >= 0;
+
                 case Direction.S:
                     return _rover.Position.Y - steps >= 0;
             }
             return false;
         }
 
-        #endregion
+        #endregion Private Method Declarations.
     }
 }

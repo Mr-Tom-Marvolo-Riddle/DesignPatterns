@@ -6,7 +6,6 @@ namespace CSharpAndWPF.Common
 {
     internal class EventManagerBase<T> : WeakEventManager
     {
-
         private EventManagerBase()
         {
         }
@@ -76,7 +75,6 @@ namespace CSharpAndWPF.Common
         {
             return new ListenerList();
         }
-
 
         /// <summary>
         /// Listen to the given source for the event.

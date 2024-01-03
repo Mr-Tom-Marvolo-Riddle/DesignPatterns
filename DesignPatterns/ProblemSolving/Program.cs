@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+
 using ProblemSolving.Demo;
 
 namespace ProblemSolving
 {
-
     internal class Program
     {
         private static int[] rotLeft(int[] arr, int d)
@@ -78,6 +78,7 @@ namespace ProblemSolving
         }
 
         private static IDemo _demo;
+
         private static void Main(string[] args)
         {
             long test = repeatedString("abb", 100000000);

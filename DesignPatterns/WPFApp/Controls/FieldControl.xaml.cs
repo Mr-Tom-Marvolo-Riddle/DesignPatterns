@@ -8,8 +8,6 @@ namespace WPFApp.Controls
     /// </summary>
     public partial class FieldControl : UserControl
     {
-
-
         public int Breadth
         {
             get => (int)GetValue(BreadthProperty);
@@ -29,8 +27,6 @@ namespace WPFApp.Controls
         // Using a DependencyProperty as the backing store for Length.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty LengthProperty =
             DependencyProperty.Register("Length", typeof(int), typeof(FieldControl), new PropertyMetadata(10));
-
-
 
         public FieldControl()
         {

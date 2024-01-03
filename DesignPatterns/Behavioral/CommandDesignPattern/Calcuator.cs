@@ -13,15 +13,19 @@ namespace Behavioral.CommandDesignPattern
                 case '+':
                     _curr += operand;
                     break;
+
                 case '-':
                     _curr -= operand;
                     break;
+
                 case '*':
                     _curr *= operand;
                     break;
+
                 case '/':
                     _curr /= operand;
                     break;
+
                 default:
                     break;
             }

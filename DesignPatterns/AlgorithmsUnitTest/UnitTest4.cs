@@ -37,7 +37,6 @@ namespace AlgorithmsUnitTest
 
             string bfs = g.BreadthFirstTraversal(2).Trim();
             Assert.IsTrue(string.Equals(bfs, "2 0 3 1", System.StringComparison.OrdinalIgnoreCase));
-
         }
     }
 }

@@ -6,12 +6,13 @@ namespace WPFApp.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        void RaisePropertyChanged(string propertyName)
+        private void RaisePropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
         private string _a;
+
         public string A
         {
             get { return _a; }
@@ -21,6 +22,5 @@ namespace WPFApp.ViewModels
                 RaisePropertyChanged(nameof(A));
             }
         }
-
     }
 }

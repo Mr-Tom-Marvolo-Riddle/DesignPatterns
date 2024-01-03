@@ -57,6 +57,7 @@ namespace Multithreading
                 "\nTo make this interception possible, when we instantiate AutoLock, the CLR actually returns a proxy — an object with the same methods and properties of an AutoLock object, which acts as an intermediary. It's via this intermediary that the automatic locking takes place. Overall, the interception adds around a microsecond to each method call.";
             ColorConsole.WriteInfo(info);
         }
+
         public static void RunThreadSafeMethod()
         {
             Console.WriteLine();
@@ -73,7 +74,7 @@ namespace Multithreading
         public static void RunThreadUnsafeMethod()
         {
             Console.WriteLine();
-            ColorConsole.WriteException("Running Thread UnSafe Method.","UNSAFE METHOD");
+            ColorConsole.WriteException("Running Thread UnSafe Method.", "UNSAFE METHOD");
             Thread th1 = new Thread(NoAutoLock.ThreadUnSafeMethod);
             Thread th2 = new Thread(NoAutoLock.ThreadUnSafeMethod);
             Thread th3 = new Thread(NoAutoLock.ThreadUnSafeMethod);

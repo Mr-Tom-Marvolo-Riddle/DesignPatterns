@@ -43,17 +43,18 @@ namespace AlgorithmsAndDataStructures.Misc
         {
             #region Problem Statement.
 
-            // Given an array A[] of N positive integers. 
-            // The task is to find the maximum of j -i subjected to the constraint of 
+            // Given an array A[] of N positive integers.
+            // The task is to find the maximum of j -i subjected to the constraint of
             // A[i] <= A[j].
 
             // Input : 34 8 10 3 2 80 30 33 1
-            // Output : Index of (80) - Index of (34)= 6 - 0 = 6 
-            #endregion
+            // Output : Index of (80) - Index of (34)= 6 - 0 = 6
+
+            #endregion Problem Statement.
 
             return strategy.MaximumIndexProblem(inputArray);
         }
 
-        //public static 
+        //public static
     }
 }

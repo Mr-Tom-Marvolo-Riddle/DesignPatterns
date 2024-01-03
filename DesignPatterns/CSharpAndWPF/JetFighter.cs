@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Reactive.Linq;
@@ -24,6 +23,7 @@ namespace CSharpAndWPF
         private Subject<JetFighter> _planeSpotted;
         public IObservable<JetFighter> PlaneSpotted => _planeSpotted.AsObservable();
         public string Name { get; set; }
+
         public JetFighter(string name)
         {
             _planeSpotted = new Subject<JetFighter>();
@@ -58,6 +58,7 @@ namespace CSharpAndWPF
         private readonly JetFighter _jetFighter;
 
         private readonly IDisposable _planeSpottedSubscription;
+
         public BomberControl(JetFighter jetFighter)
         {
             _jetFighter = jetFighter;
@@ -78,6 +79,7 @@ namespace CSharpAndWPF
     public class ViewModelBase : INotifyPropertyChanged
     {
         private event PropertyChangedEventHandler _propertyChanged;
+
         event PropertyChangedEventHandler INotifyPropertyChanged.PropertyChanged
         {
             add

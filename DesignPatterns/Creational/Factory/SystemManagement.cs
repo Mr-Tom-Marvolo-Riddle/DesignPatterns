@@ -21,7 +21,7 @@ namespace Creational.Factory
             ConfigurePrinters();
         }
 
-        #endregion
+        #endregion Constructor
 
         #region ISystemManagement Interface Implementation.
 
@@ -35,6 +35,6 @@ namespace Creational.Factory
             }
         }
 
-        #endregion
+        #endregion ISystemManagement Interface Implementation.
     }
 }

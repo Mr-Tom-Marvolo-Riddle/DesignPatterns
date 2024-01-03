@@ -20,22 +20,23 @@
         #region Public Properties.
 
         public int X { get; set; }
-        public int Y { get; set; } 
+        public int Y { get; set; }
 
-        #endregion
+        #endregion Public Properties.
 
         #region Constructors.
 
         public Position()
         {
         }
+
         public Position(int x, int y)
         {
             X = x;
             Y = y;
-        } 
+        }
 
-        #endregion
+        #endregion Constructors.
     }
 
     public class Rover
@@ -45,7 +46,7 @@
         public Position Position { get; set; }
         public Direction Direction { get; set; }
 
-        #endregion
+        #endregion Public Properties.
 
         #region Constructor.
 
@@ -53,8 +54,8 @@
         {
             Position = position;
             Direction = direction;
-        } 
+        }
 
-        #endregion
+        #endregion Constructor.
     }
 }

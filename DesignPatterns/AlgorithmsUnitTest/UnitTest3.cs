@@ -24,7 +24,6 @@ namespace AlgorithmsUnitTest
             socks = new int[] { 2, 4 };
             totalPairs = SockMerchantProblem.GetPairOfSocks(socks);
             Assert.AreEqual(totalPairs, 0);
-
         }
 
         [TestMethod]

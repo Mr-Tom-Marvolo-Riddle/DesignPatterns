@@ -8,6 +8,7 @@ namespace ProblemSolving.HackerRank.Backtracking
         public int Row { get; set; }
         public int Column { get; set; }
     }
+
     public class NQueenProblem
     {
         public static Position[] GetPositions(int n)
@@ -17,7 +18,7 @@ namespace ProblemSolving.HackerRank.Backtracking
             return validPositions;
         }
 
-        private static bool GetAllValidPositions(int n,int row,Position[] validPositions,List<Position[]> positions)
+        private static bool GetAllValidPositions(int n, int row, Position[] validPositions, List<Position[]> positions)
         {
             throw new NotImplementedException();
         }

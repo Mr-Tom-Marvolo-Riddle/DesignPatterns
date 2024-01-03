@@ -7,7 +7,7 @@
         public int Data { get; set; }
         public LLNode Next { get; set; }
 
-        #endregion
+        #endregion Public Properties.
 
         #region Constructors.
 
@@ -15,12 +15,12 @@
         {
             Data = data;
         }
+
         public LLNode()
         {
-
         }
 
-        #endregion
+        #endregion Constructors.
 
         public override string ToString()
         {

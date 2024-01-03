@@ -8,6 +8,7 @@ using log4net;
 namespace CSharpAndWPF.AsyncDelegates
 {
     public delegate void TimeLogActivityHandler(string info, TimeSpan elapsed);
+
     public class TimeLogger : IDisposable
     {
         private static readonly ILog _log4Netlogger = LogManager.GetLogger(typeof(TimeLogger));

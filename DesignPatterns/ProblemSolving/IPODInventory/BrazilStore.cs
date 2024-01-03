@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-
-namespace ProblemSolving.IPODInventory
+﻿namespace ProblemSolving.IPODInventory
 {
     public class BrazilStore : Store
     {
@@ -15,7 +12,7 @@ namespace ProblemSolving.IPODInventory
             Replenish(100);
         }
 
-        #endregion
+        #endregion Constructors.
 
         #region Public Overrides.
 
@@ -30,7 +27,7 @@ namespace ProblemSolving.IPODInventory
             return _storeFactory.GetStore(Constants.ARGENTINA);
         }
 
-        #endregion
+        #endregion Public Overrides.
 
         #region Private Method Declarations.
 
@@ -44,6 +41,6 @@ namespace ProblemSolving.IPODInventory
             }
         }
 
-        #endregion
+        #endregion Private Method Declarations.
     }
 }

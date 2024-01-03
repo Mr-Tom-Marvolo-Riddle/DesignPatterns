@@ -30,7 +30,6 @@ namespace ProblemSolving.HackerRank.WarmUp
 
         private int CalculateWaterVolume(int[] waterTappedArray)
         {
-
             //|     |
             //|_|_ _|
 
@@ -57,7 +56,6 @@ namespace ProblemSolving.HackerRank.WarmUp
 
             return volume;
         }
-
 
         private int CalculateWaterVolume2(int[] waterTappedArray)
         {
@@ -105,7 +103,6 @@ namespace ProblemSolving.HackerRank.WarmUp
 
                 if (left > 0 && right > 0 && height > 0)
                 {
-
                 }
             }
 

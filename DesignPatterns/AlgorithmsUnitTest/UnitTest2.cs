@@ -1,4 +1,5 @@
 ﻿using AlgorithmsAndDataStructures.Misc;
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AlgorithmsUnitTest

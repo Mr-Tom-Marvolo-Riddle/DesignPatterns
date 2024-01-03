@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+
 using ProblemSolving.Monopoly.Game.Cells;
 
 namespace ProblemSolving.Monopoly.Game
@@ -7,6 +8,7 @@ namespace ProblemSolving.Monopoly.Game
     {
         //private readonly int _currentDiceIndex = 0;
         private readonly CellFactory _cellFactory;
+
         public Cell StartCell { get; private set; }
 
         #region Constructors.
@@ -17,7 +19,7 @@ namespace ProblemSolving.Monopoly.Game
             StartCell = CreateCells(input);
         }
 
-        #endregion
+        #endregion Constructors.
 
         private Cell CreateCells(string input)
         {

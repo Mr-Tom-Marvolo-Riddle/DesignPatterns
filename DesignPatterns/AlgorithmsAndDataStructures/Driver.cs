@@ -1,13 +1,13 @@
 ﻿using System;
 
 using AlgorithmsAndDataStructures.Demo;
-using AlgorithmsAndDataStructures.Matrix;
 
 namespace AlgorithmsAndDataStructures
 {
     public class Driver
     {
         private static IDemo _demo;
+
         public static void Main(string[] args)
         {
             //int totalNodes = 5;

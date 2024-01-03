@@ -20,9 +20,11 @@
                             totalValleysCount++;
                         }
                         break;
+
                     case 'D':
                         currentLevel--;
                         break;
+
                     default:
                         break;
                 }

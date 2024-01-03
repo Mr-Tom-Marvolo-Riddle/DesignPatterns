@@ -1,4 +1,5 @@
 ﻿using System;
+
 using ProblemSolving.HotelManagement.Extensions;
 
 namespace ProblemSolving.HotelManagement
@@ -9,6 +10,7 @@ namespace ProblemSolving.HotelManagement
         public abstract int RegularCustWeekdayPrice { get; set; }
         public abstract int RewardeeCustWeekendPrice { get; set; }
         public abstract int RewardeeCustWeekdayPrice { get; set; }
+
         public virtual int GetPrice(Customer customer, DateTime date)
         {
             if (customer is Rewardee)

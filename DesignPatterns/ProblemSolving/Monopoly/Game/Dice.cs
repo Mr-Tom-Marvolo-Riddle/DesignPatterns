@@ -15,7 +15,7 @@ namespace ProblemSolving.Monopoly.Game
             PopulateOutcomes(outputs);
         }
 
-        #endregion
+        #endregion Constructors
 
         #region Public Method Declarations.
 
@@ -32,9 +32,9 @@ namespace ProblemSolving.Monopoly.Game
 
             System.Console.WriteLine("Dice-Output", _currentDiceIndex);
             return diceOutput;
-        } 
+        }
 
-        #endregion
+        #endregion Public Method Declarations.
 
         #region Private Method Declarations.
 
@@ -50,6 +50,6 @@ namespace ProblemSolving.Monopoly.Game
             }
         }
 
-        #endregion
+        #endregion Private Method Declarations.
     }
 }
